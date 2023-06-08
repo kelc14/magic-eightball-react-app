@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import "./EightBall.css";
 
+/** EightBall: shows random answer and, on click, changes answer,
+ *
+ * Props:
+ * - answers: array of {msg, color} objects
+ *
+ * State:
+ * - getResponse: {msg, color} of current answer
+ */
+
 const EightBall = ({ answers }) => {
   const [color, setColor] = useState("black");
   const [message, setMessage] = useState("Think of a Question");
